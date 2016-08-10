@@ -1,0 +1,67 @@
+body {
+	padding:0;
+	margin:0;
+	text-align:center;
+}
+.portrait .scacchiera {
+    width: 100vw;
+    height: 100vw;
+}
+.landscape {
+    text-align:center;
+}
+.landscape .scacchiera {
+    width: 100vh;
+    height: 100vh;
+}
+.scacchieraTemp {
+
+    width: 22.9vw;
+    height: 22.9vw;
+    display:inline-block;
+    border: 1px solid green;
+    box-sizing:content-box;
+}
+.scacchiera {
+    display:inline-block;
+}
+.casella {
+	background-color:gainsboro;
+	width:12.5%;
+	height:12.5%;
+	display:inline-block;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    font-size: 12px;
+    text-align: right;
+}
+.casella:nth-child(-2n+8),
+.casella:nth-child(8) ~ .casella:nth-child(-2n+15),
+.casella:nth-child(16) ~ .casella:nth-child(-2n+24),
+.casella:nth-child(24) ~ .casella:nth-child(-2n+31),
+.casella:nth-child(32) ~ .casella:nth-child(-2n+40),
+.casella:nth-child(40) ~ .casella:nth-child(-2n+47),
+.casella:nth-child(48) ~ .casella:nth-child(-2n+56),
+.casella:nth-child(56) ~ .casella:nth-child(-2n+63) {
+    background-color: lightgray;
+}
+.highlight {background-color: green !important;}
+.highlight2 {opacity: 0.5}
+.highlight3 {background-color: darkorange !important;}
+.scacco {border: 1px solid red !important;}
+.highlight.highlight3  {background-color: red !important;}
+
+
+.pedonebianco {background-image: url('./imgs/pedonebianco.png');}
+.pedonenero {background-image: url('./imgs/pedonenero.png');}
+.cavallobianco {background-image: url('./imgs/cavallobianco.png');}
+.cavallonero {background-image: url('./imgs/cavallonero.png');}
+.alfierebianco {background-image: url('./imgs/alfierebianco.png');}
+.alfierenero {background-image: url('./imgs/alfierenero.png');}
+.torrebianco {background-image: url('./imgs/torrebianco.png');}
+.torrenero {background-image: url('./imgs/torrenero.png');}
+.rebianco {background-image: url('./imgs/rebianco.png');}
+.renero {background-image: url('./imgs/renero.png');}
+.reginabianco {background-image: url('./imgs/reginabianco.png');}
+.reginanero {background-image: url('./imgs/reginanero.png');}
